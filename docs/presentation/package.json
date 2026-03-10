@@ -1,0 +1,14 @@
+{
+  "name": "synthora-presentation",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "npm run build:enterprise",
+    "build:enterprise": "node ./build-deck.mjs && powershell -ExecutionPolicy Bypass -File ./export-pdf.ps1 -PptxPath ./synthora-enterprise-overview.pptx -PdfPath ./synthora-enterprise-overview.pdf",
+    "build:launch": "node ./build-launch-deck.mjs && powershell -ExecutionPolicy Bypass -File ./export-pdf.ps1 -PptxPath ./synthora-product-launch.pptx -PdfPath ./synthora-product-launch.pdf",
+    "build:all": "npm run build:enterprise && npm run build:launch"
+  },
+  "dependencies": {
+    "pptxgenjs": "^3.12.0"
+  }
+}

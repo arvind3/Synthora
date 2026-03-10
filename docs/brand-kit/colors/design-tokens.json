@@ -1,0 +1,46 @@
+{
+  "color": {
+    "primary": {
+      "value": "#0A6E5C"
+    },
+    "primary-light": {
+      "value": "#0D8A73"
+    },
+    "primary-dark": {
+      "value": "#064D40"
+    },
+    "secondary": {
+      "value": "#1A1A2E"
+    },
+    "accent": {
+      "value": "#F0A500"
+    },
+    "accent-soft": {
+      "value": "#FFF3D6"
+    },
+    "mint": {
+      "value": "#2DD4A8"
+    },
+    "ink": {
+      "value": "#1E2028"
+    },
+    "slate": {
+      "value": "#6B6E7F"
+    },
+    "light": {
+      "value": "#9497A6"
+    },
+    "muted": {
+      "value": "#C4C6D0"
+    },
+    "line": {
+      "value": "#E4E5EA"
+    },
+    "mist": {
+      "value": "#F3F4F6"
+    },
+    "cloud": {
+      "value": "#F9FAFB"
+    }
+  }
+}
