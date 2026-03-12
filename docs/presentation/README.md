@@ -1,46 +1,11 @@
-# Synthora Presentation
+# Presentation Files
 
-This folder contains the source and assets for the Synthora enterprise overview deck.
+Use these links if GitHub's file viewer is not convenient for direct reading:
 
-## Build
+- Live browser page: https://arvind3.github.io/Synthora/docs/presentation/synthora-pith_account_leaders.html
+- Markdown notes: ./synthora-pith_account_leaders.md
+- Plain text notes: ./synthora-pith_account_leaders.txt
+- PDF deck: ./synthora-pith_account_leaders.pdf
+- PowerPoint deck: ./synthora-pith_account_leaders.pptx
 
-```powershell
-cd docs/presentation
-npm install
-npm run build
-```
-
-Default build output:
-
-- `docs/presentation/synthora-enterprise-overview.pptx`
-- `docs/presentation/synthora-enterprise-overview.pdf`
-
-Additional commands:
-
-```powershell
-npm run build:launch
-npm run build:all
-```
-
-Launch deck output:
-
-- `docs/presentation/synthora-product-launch.pptx`
-- `docs/presentation/synthora-product-launch.pdf`
-
-## Assets
-
-Expected screenshot assets:
-
-- `assets/home-overview.png`
-- `assets/explore-browser.png`
-- `assets/dataset-builder.png`
-- `assets/export-workflow.png`
-
-The deck source uses these assets directly so the presentation can be regenerated without manual slide editing.
-
-## Other Content
-
-- `build-deck.mjs` builds the enterprise solution overview deck
-- `build-launch-deck.mjs` builds the marketing/product-launch deck
-- `deck-review.md` contains presentation review notes and improvement recommendations
-- `launch-posts.md` contains launch copy for LinkedIn and X
+The HTML page above is the best option for non-technical readers.

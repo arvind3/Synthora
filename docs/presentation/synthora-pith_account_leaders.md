@@ -1,3 +1,14 @@
+# Live View
+
+Read this presentation in the browser:
+
+- Live HTML page: https://arvind3.github.io/Synthora/docs/presentation/synthora-pith_account_leaders.html
+- Plain text: https://raw.githubusercontent.com/arvind3/Synthora/main/docs/presentation/synthora-pith_account_leaders.txt
+- PDF: https://raw.githubusercontent.com/arvind3/Synthora/main/docs/presentation/synthora-pith_account_leaders.pdf
+- PowerPoint: https://raw.githubusercontent.com/arvind3/Synthora/main/docs/presentation/synthora-pith_account_leaders.pptx
+
+---
+
 # Synthora
 
 **Tagline:** *Synthetic Data for Everyone*

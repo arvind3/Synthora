@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Synthora | Account Leaders Brief</title>
+    <meta
+      name="description"
+      content="Client-readable Synthora account leaders brief published through the Synthora GitHub Pages site."
+    />
+    <style>
+      :root {
+        --bg: #f4f7f6;
+        --surface: #ffffff;
+        --surface-soft: #ecf6f3;
+        --ink: #162025;
+        --muted: #5a6972;
+        --line: #d7e0dd;
+        --brand: #0a6e5c;
+        --brand-dark: #064d40;
+        --hero: #112228;
+        --shadow: 0 18px 48px rgba(17, 34, 40, 0.08);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        margin: 0;
+        min-height: 100%;
+      }
+
+      body {
+        font-family: "Segoe UI", Arial, sans-serif;
+        background:
+          radial-gradient(circle at top right, rgba(10, 110, 92, 0.08), transparent 28%),
+          linear-gradient(180deg, #fbfcfc 0%, var(--bg) 100%);
+        color: var(--ink);
+        line-height: 1.65;
+      }
+
+      a {
+        color: var(--brand-dark);
+      }
+
+      .hero {
+        background: linear-gradient(135deg, #102226 0%, #17343a 55%, #0a6e5c 100%);
+        color: #ffffff;
+        padding: 4rem 1.5rem 3rem;
+      }
+
+      .hero-inner,
+      .content,
+      .footer {
+        max-width: 960px;
+        margin: 0 auto;
+      }
+
+      .eyebrow {
+        display: inline-block;
+        margin-bottom: 1rem;
+        padding: 0.35rem 0.75rem;
+        border: 1px solid rgba(255, 255, 255, 0.22);
+        border-radius: 999px;
+        font-size: 0.78rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      h1,
+      h2,
+      h3,
+      p {
+        margin: 0;
+      }
+
+      .hero h1 {
+        font-size: clamp(2.2rem, 4vw, 3.5rem);
+        line-height: 1.06;
+        letter-spacing: -0.04em;
+      }
+
+      .hero p {
+        margin-top: 1rem;
+        max-width: 44rem;
+        color: rgba(255, 255, 255, 0.85);
+        font-size: 1.08rem;
+      }
+
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+        margin-top: 1.5rem;
+      }
+
+      .button {
+        display: inline-block;
+        padding: 0.82rem 1.15rem;
+        border-radius: 12px;
+        background: #ffffff;
+        color: var(--hero);
+        font-weight: 700;
+        text-decoration: none;
+      }
+
+      .button.secondary {
+        background: rgba(255, 255, 255, 0.12);
+        color: #ffffff;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+      }
+
+      .content {
+        padding: 2rem 1.5rem 4rem;
+      }
+
+      .notice {
+        margin-top: -2rem;
+        margin-bottom: 1.75rem;
+        padding: 1rem 1.1rem;
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        background: var(--surface);
+        box-shadow: var(--shadow);
+        color: var(--muted);
+      }
+
+      .section {
+        margin-top: 1.5rem;
+        padding: 1.6rem;
+        background: var(--surface);
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        box-shadow: var(--shadow);
+      }
+
+      .section h2 {
+        margin-bottom: 0.85rem;
+        font-size: 1.45rem;
+        letter-spacing: -0.02em;
+      }
+
+      .section p + p {
+        margin-top: 1rem;
+      }
+
+      .section ul {
+        margin: 0.9rem 0 0;
+        padding-left: 1.25rem;
+      }
+
+      .section li + li {
+        margin-top: 0.45rem;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 1rem;
+        margin-top: 1rem;
+      }
+
+      .card {
+        padding: 1rem;
+        border-radius: 14px;
+        background: var(--surface-soft);
+        border: 1px solid #d4e7e1;
+      }
+
+      .card h3 {
+        margin-bottom: 0.45rem;
+        font-size: 1rem;
+      }
+
+      .pitch {
+        margin-top: 1rem;
+        padding: 1.1rem 1.2rem;
+        border-left: 4px solid var(--brand);
+        background: #f8fcfb;
+        border-radius: 0 14px 14px 0;
+      }
+
+      .footer {
+        padding: 0 1.5rem 3rem;
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+
+      @media (max-width: 640px) {
+        .hero {
+          padding-top: 3rem;
+        }
+
+        .content,
+        .footer {
+          padding-left: 1rem;
+          padding-right: 1rem;
+        }
+
+        .section {
+          padding: 1.2rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero-inner">
+        <div class="eyebrow">Synthora Brief</div>
+        <h1>Synthora for Account Leaders</h1>
+        <p>
+          A client-readable summary of the product, the business problem it solves,
+          and the opportunity it creates for consulting and delivery teams.
+        </p>
+        <div class="actions">
+          <a class="button" href="https://raw.githubusercontent.com/arvind3/Synthora/main/docs/presentation/synthora-pith_account_leaders.pdf">Open PDF</a>
+          <a class="button secondary" href="https://raw.githubusercontent.com/arvind3/Synthora/main/docs/presentation/synthora-pith_account_leaders.pptx">Download PowerPoint</a>
+          <a class="button secondary" href="https://raw.githubusercontent.com/arvind3/Synthora/main/docs/presentation/synthora-pith_account_leaders.txt">Read Plain Text</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="content">
+      <div class="notice">
+        If you reached the GitHub repository first, this page is the readable version intended for clients and non-technical stakeholders.
+      </div>
+
+      <section class="section">
+        <h2>Synthora</h2>
+        <p><strong>Tagline:</strong> <em>Synthetic Data for Everyone</em></p>
+      </section>
+
+      <section class="section">
+        <h2>Business Problem</h2>
+        <p>
+          Generating synthetic data has traditionally been a <strong>technical and complex process</strong>.
+          Teams often require <strong>programming skills, scripting knowledge, or specialized tools</strong>
+          to create datasets for testing, development, demos, and AI workflows.
+        </p>
+        <ul>
+          <li>Application testing</li>
+          <li>Test data generation</li>
+          <li>AI and ML model fine-tuning</li>
+          <li>Data simulation for development and demos</li>
+        </ul>
+        <p>
+          This creates unnecessary dependency on developers and data engineers, slows down projects,
+          and increases delivery cost.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>The Solution</h2>
+        <p>
+          <strong>Synthora</strong> enables anyone, technical or non-technical, to generate realistic
+          synthetic datasets instantly through a browser-based experience.
+        </p>
+        <p>
+          Users can create data for testing, development, AI training, and analytics with
+          <strong>pre-built industry templates</strong> and an intuitive interface, without writing code.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>Key Features</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>Full Data Builder Experience</h3>
+            <p>Design and generate synthetic datasets visually.</p>
+          </div>
+          <div class="card">
+            <h3>Industry-Ready Templates</h3>
+            <p>Start from retail, customer, logistics, finance, and automation datasets.</p>
+          </div>
+          <div class="card">
+            <h3>Flexible Export Formats</h3>
+            <p>Export generated datasets in JSON and CSV for immediate use.</p>
+          </div>
+          <div class="card">
+            <h3>Template Customization</h3>
+            <p>Adapt templates to client-specific scenarios without technical expertise.</p>
+          </div>
+          <div class="card">
+            <h3>Browser-Based Access</h3>
+            <p>No installation, no login, and instant availability.</p>
+          </div>
+          <div class="card">
+            <h3>Deterministic Generation</h3>
+            <p>Reproduce datasets consistently for repeatable testing workflows.</p>
+          </div>
+          <div class="card">
+            <h3>Progressive Web App</h3>
+            <p>Install Synthora like a lightweight app directly from the browser.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Opportunity for IT Account Leaders</h2>
+        <p>
+          Synthora creates a practical way to <strong>accelerate client delivery and reduce cost</strong>.
+        </p>
+        <ul>
+          <li>Create templates tailored to specific industries or accounts</li>
+          <li>Provide ready-to-use datasets for testing and development teams</li>
+          <li>Reduce manual scripting effort for test data generation</li>
+          <li>Enable business users to generate their own datasets safely</li>
+        </ul>
+        <p>
+          The result is lower dependency on engineering teams and faster execution across projects.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>Elevator Pitch</h2>
+        <div class="pitch">
+          <p>
+            <strong>Synthora</strong> is a lightweight platform that enables anyone to generate realistic
+            synthetic datasets instantly using ready-to-use templates.
+          </p>
+          <p><strong>No coding. No setup. No login. Just generate the data you need.</strong></p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Brand Messaging</h2>
+        <ul>
+          <li><strong>Product name:</strong> Synthora</li>
+          <li><strong>Tagline:</strong> Synthetic Data for Everyone</li>
+          <li><strong>Sub-line:</strong> Generate realistic datasets instantly using powerful templates. No login. No coding. Just data.</li>
+          <li><strong>Positioning:</strong> “Think Postman, but for data.”</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>One-Line Product Description</h2>
+        <p>
+          Synthora is a browser-based synthetic data generation platform that enables anyone to instantly create realistic datasets using customizable templates, with no coding required.
+        </p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      Published from the Synthora repository via GitHub Pages.
+    </footer>
+  </body>
+</html>
